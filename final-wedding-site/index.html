@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash &amp; Aarzoo | We're Getting Married</title>
+<meta name="description" content="Join us in celebrating the wedding of Akash &amp; Aarzoo — 5th November 2026, Jaipur.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Marcellus&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= INTRO / ENTRY OVERLAY ================= -->
+<div class="intro" id="intro">
+  <div class="intro-particles" id="introParticles"></div>
+
+  <div class="intro-card" id="introCard">
+    <img class="intro-corner-flowers intro-corner-flowers--tl" id="introFlowersTL" src="assets/images/hero-flowers.png" alt="">
+    <img class="intro-corner-flowers intro-corner-flowers--br" id="introFlowersBR" src="assets/images/hero-flowers.png" alt="">
+
+    <div class="intro-card-inner">
+      <div class="intro-badge">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 21s-7.5-4.6-10.2-9.3C.3 8.9 1.6 5.4 4.9 4.4c2.1-.6 4.1.3 5.3 2 .3.4.9.4 1.2 0 1.2-1.7 3.2-2.6 5.3-2 3.3 1 4.6 4.5 3.1 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>
+      </div>
+      <p class="intro-names">
+        <span class="intro-name">Aarzoo</span>
+        <span class="intro-amp">&amp;</span>
+        <span class="intro-name">Akash</span>
+      </p>
+      <div class="intro-divider">
+        <span></span>
+        <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 3c-3 2-5 5-5 8a5 5 0 0010 0c0-3-2-6-5-8z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <span></span>
+      </div>
+      <p class="intro-date">25 November, 2026</p>
+      <p class="intro-invites"><b>Cordially Invites</b></p>
+      <button class="btn-enter" id="btnEnter">
+        <span>Open</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= BACKGROUND MUSIC ================= -->
+<audio id="bgMusic" loop preload="none">
+  <source src="assets/audio/wedding-music.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+  <svg viewBox="0 0 24 24" class="icon-note" id="noteIcon"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+</button>
+
+<!-- ================= NAV DOTS ================= -->
+<nav class="side-nav" id="sideNav">
+  <a href="#home" data-label="Home"></a>
+  <a href="#ceremony" data-label="Ceremony"></a>
+  <a href="#gallery" data-label="Gallery"></a>
+  <a href="#Wedding" data-label="Wedding"></a>
+  <a href="#venue" data-label="Venue"></a>
+  <a href="#schedule" data-label="Schedule"></a>
+  <a href="#guestbook" data-label="Guestbook"></a>
+  <a href="#gift" data-label="Gift"></a>
+</nav>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image:url('assets/images/hero-arch.png')"></div>
+    <div class="hero-petals" id="heroPetals"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">We're Getting Married</p>
+      <h1 class="hero-names">Aarzoo<span class="amp">&amp;</span>Akash</h1>
+    </div>
+  </section>
+
+  <!-- ================= CEREMONY INFO ================= -->
+  <section class="section paper" id="ceremony">
+    <div class="corner corner--tl"></div>
+    <div class="corner corner--tr"></div>
+    <div class="container narrow">
+      <div class="flourish"></div>
+      <h2 class="section-title">Ceremony Info</h2>
+
+      <div class="parents">
+        <div class="parents-block">
+          <p class="parents-honorific">Mr. &amp; Mrs.</p>
+          <p class="parents-name">Rakesh Singh</p>
+          <p class="parents-name">Sarita Singh</p>
+        </div>
+        <div class="parents-divider"></div>
+        <div class="parents-block">
+          <p class="parents-honorific">Mr. &amp; Mrs.</p>
+          <p class="parents-name">Sanjay Singh</p>
+          <p class="parents-name">Gita Singh</p>
+        </div>
+      </div>
+
+      <p class="announce">We joyfully announce<br>the wedding of our children</p>
+
+      <div class="couple-names">
+        <p class="couple-name">Aarzoo Singh</p>
+        <p class="amp-large">&amp;</p>
+        <p class="couple-name">Akash Singh</p>
+      </div>
+
+      <p class="venue-line">The wedding ceremony will be held at<br>the Viraj International Hotel</p>
+      <p class="venue-time">AT 17:00</p>
+
+      <div class="date-row">
+        <span class="date-day">Wednesday</span>
+        <span class="date-num">25</span>
+        <span class="date-month">November</span>
+      </div>
+      <p class="date-year">2026</p>
+    </div>
+  </section>
+
+  <!-- ================= PHOTO GALLERY ================= -->
+  <section class="section paper" id="gallery">
+    <div class="flourish"></div>
+    <h2 class="section-title">Photo Gallery</h2>
+
+    <div class="coverflow" id="coverflow">
+      <button class="cf-arrow cf-arrow--prev" id="cfPrev" aria-label="Previous photo">&#10094;</button>
+      <div class="cf-track" id="cfTrack">
+        <!-- slides injected by JS -->
+      </div>
+      <button class="cf-arrow cf-arrow--next" id="cfNext" aria-label="Next photo">&#10095;</button>
+    </div>
+    <p class="cf-counter"><span id="cfCurrent">1</span> / <span id="cfTotal">8</span></p>
+
+    <div class="corner corner--bl"></div>
+    <div class="corner corner--br"></div>
+  </section>
+
+  <!-- ================= Wedding INFO ================= -->
+  <section class="section paper" id="reception">
+    <div class="corner corner--tl"></div>
+    <div class="corner corner--tr"></div>
+    <div class="container narrow">
+      <div class="flourish"></div>
+      <h2 class="section-title">Wedding Info</h2>
+      <p class="announce small">The Wedding will take place at:</p>
+      <p class="venue-time large">17:00</p>
+
+      <div class="date-row">
+        <span class="date-day">Wednesday</span>
+        <span class="date-num">25</span>
+        <span class="date-month">November</span>
+      </div>
+      <p class="date-year">2026</p>
+
+      <div class="time-pair">
+        <div>
+          <p class="time-pair-label">Welcome</p>
+          <p class="time-pair-value">16:00</p>
+        </div>
+        <div>
+          <p class="time-pair-label">Wedding</p>
+          <p class="time-pair-value">17:00</p>
+        </div>
+      </div>
+
+      <p class="countdown-label">Countdown</p>
+      <p class="countdown" id="countdown">-- days -- hours -- min -- sec</p>
+
+      <div class="calendar-frame">
+        <div class="calendar-corner cc-tl"></div>
+        <div class="calendar-corner cc-tr"></div>
+        <div class="calendar-corner cc-bl"></div>
+        <div class="calendar-corner cc-br"></div>
+        <h3 class="calendar-title">November 2026</h3>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <a href="#" class="link-underline" id="addToCalendar">Add to Calendar</a>
+      <a href="https://forms.gle/Az7CpRqkaHyQArhQ7" target="_blank"><button class="btn-maroon" id="btnRSVP">Confirm Attendance</button></a>
+    </div>
+  </section>
+
+  <!-- ================= VENUE / MAP ================= -->
+  <section class="section paper" id="venue">
+    <div class="container narrow">
+      <h3 class="section-subtitle">Wedding Venue</h3>
+      <div class="map-frame map-link-card">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Viraj+International+Hotel+Babatpur+Varanasi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Viraj International Hotel in Google Maps"
+          >
+            <div class="map-placeholder">
+              <div class="map-pin">♥</div>
+              <h4>Viraj International Hotel</h4>
+              <p>Babatpur, Varanasi<br>Uttar Pradesh, India</p>
+              <span>Open in Google Maps →</span>
+            </div>
+          </a>
+        </div>
+        <br />
+      <div class="map-frame">
+        <iframe
+          title="Viraj International Hotel, Varanasi"
+          src="https://maps.google.com/maps?q=Viraj+International+Hotel+Babatpur+Varanasi+Uttar+Pradesh&output=embed&z=15"
+          width="100%" height="100%"
+          style="border: 0"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <br />
+
+      <div class="flourish"></div>
+
+      <h3 class="section-subtitle">Dress Code</h3>
+      <p class="dress-sub">Party Attire</p>
+      <div class="swatches">
+        <span class="swatch" style="background:#5D021A" title="Wine Maroon"></span>
+        <span class="swatch" style="background:#A67647" title="Antique Gold"></span>
+        <span class="swatch swatch--light" style="background:#F6E9D8" title="Ivory Cream"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCHEDULE ================= -->
+  <section class="section paper" id="schedule">
+    <div class="container narrow">
+      <h3 class="section-subtitle">Celebrations Schedule</h3>
+      <ul class="timeline">
+        <li>
+          <span class="tl-time">24 Nov - 10:00</span>
+          <span class="tl-dot"></span>
+          <span class="tl-event">Carnival</span>
+        </li>
+        <li>
+          <span class="tl-time">24 Nov - 19:00</span>
+          <span class="tl-dot tl-dot--icon" data-icon="rings"></span>
+          <span class="tl-event">Sangeet</span>
+        </li>
+        <li>
+          <span class="tl-time">25 Nov - 10:00</span>
+          <span class="tl-dot tl-dot--icon" data-icon="glass"></span>
+          <span class="tl-event">Phool Wali Haldi</span>
+        </li>
+        <li>
+          <span class="tl-time">25 Nov - 20:00</span>
+          <span class="tl-dot tl-dot--icon" data-icon="dine"></span>
+          <span class="tl-event">Vaar Mala</span>
+        </li>
+        <li>
+          <span class="tl-time">25 Nov - 21:00</span>
+          <span class="tl-dot tl-dot--icon" data-icon="dine"></span>
+          <span class="tl-event">Dwar Pooja</span>
+        </li>
+        <li>
+          <span class="tl-time">25 Nov - 23:00</span>
+          <span class="tl-dot tl-dot--icon" data-icon="dine"></span>
+          <span class="tl-event">Grand Wedding</span>
+        </li>
+        <li>
+          <span class="tl-time">26 Nov - 6:00</span>
+          <span class="tl-dot"></span>
+          <span class="tl-event">Vidai</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= GUESTBOOK ================= -->
+  <section class="section paper" id="guestbook">
+    <div class="container narrow">
+      <h3 class="section-subtitle">Guestbook</h3>
+      <form id="guestForm" class="guest-form">
+        <input type="text" id="guestName" placeholder="Enter your name*" required maxlength="60">
+        <textarea id="guestWish" placeholder="Enter your wishes*" required maxlength="400" rows="4"></textarea>
+        <div class="guest-form-row">
+          <button type="button" class="btn-icon" id="btnClearForm" aria-label="Clear form">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 20l1.5-4.5L16 5l3 3L8.5 18.5 4 20z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="submit" class="btn-maroon small">Send Wishes</button>
+        </div>
+      </form>
+      <div class="guest-list" id="guestList"></div>
+    </div>
+  </section>
+
+  <!-- ================= GIFT BOX ================= -->
+  <section class="section paper" id="gift">
+    <div class="container narrow">
+      <h3 class="section-subtitle">Gift Box</h3>
+      <button class="gift-box-btn" id="btnGift">
+        <img src="assets/images/gift-box.png" alt="Wedding gift box">
+      </button>
+      <p class="tap-open">Tap to open</p>
+      <p class="gift-note">Your presence would be the greatest gift we could receive!</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&#9825; Akash &amp; Aarzoo · 25 November 2026</p>
+  </footer>
+
+</main>
+
+<!-- ================= RSVP MODAL ================= -->
+<div class="modal" id="rsvpModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Confirm Attendance</h3>
+      <button class="modal-close" data-close>&times;</button>
+    </div>
+    <form id="rsvpForm" class="modal-body">
+      <label>Full name
+        <input type="text" id="rsvpName" required>
+      </label>
+      <label>Will you attend?
+        <div class="radio-row">
+          <label class="radio"><input type="radio" name="attending" value="yes" checked> Joyfully yes</label>
+          <label class="radio"><input type="radio" name="attending" value="no"> Regretfully no</label>
+        </div>
+      </label>
+      <label>Number of guests
+        <input type="number" id="rsvpGuests" min="1" max="10" value="1">
+      </label>
+      <label>Message for the couple (optional)
+        <textarea id="rsvpMessage" rows="3"></textarea>
+      </label>
+      <button type="submit" class="btn-maroon full">Send RSVP</button>
+      <p class="rsvp-thanks" id="rsvpThanks">Thank you! Your response has been recorded.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ================= GIFT MODAL ================= -->
+<div class="modal" id="giftModal">
+  <div class="modal-card gift-modal-card">
+    <div class="modal-head modal-head--maroon">
+      <h3>Gift Box</h3>
+      <button class="modal-close modal-close--light" data-close>&times;</button>
+    </div>
+    <div class="modal-body gift-body">
+      <div class="gift-col">
+        <p class="gift-bank"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M3 10l9-6 9 6v1H3v-1zm1 2h16v8H4v-8zm2 2v4h2v-4H6zm5 0v4h2v-4h-2zm5 0v4h2v-4h-2z" fill="currentColor"/></svg> Groom</p>
+        <img class="gift-qr" src="assets/images/groom-qr.png" alt="Groom payment QR code">
+        <p class="gift-qr-note"></p>
+        <p class="gift-account">9696206468<br><strong>Akash Singh</strong></p>
+        <a class="btn-save-qr" href="assets/images/groom-qr.png" download="Akash-account-qr.png">&#8681; Save QR</a>
+      </div>
+      <div class="gift-col">
+        <p class="gift-bank"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M3 10l9-6 9 6v1H3v-1zm1 2h16v8H4v-8zm2 2v4h2v-4H6zm5 0v4h2v-4h-2zm5 0v4h2v-4h-2z" fill="currentColor"/></svg> Bride</p>
+        <img class="gift-qr" src="assets/images/bride-qr.png" alt="Bride payment QR code">
+        <p class="gift-qr-note"></p>
+        <p class="gift-account">9712748801<br><strong>Aarzoo Singh</strong></p>
+        <a class="btn-save-qr" href="assets/images/bride-qr.png" download="Aarzoo-account-qr.png">&#8681; Save QR</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
